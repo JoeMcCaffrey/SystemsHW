@@ -1,0 +1,71 @@
+
+
+#include <stdio.h>
+
+int main() {
+
+unsigned char b3 = 202;
+unsigned char b2 = 254;
+unsigned char b1 = 186;
+unsigned char b0 = 190;
+
+
+unsigned int u=0   ;
+/*
+u|31;
+u|30;
+u|27;
+u|25;
+u|23;
+u|22;
+u|21;
+u|20;
+u|19;
+u|18;
+u|17;
+u|15;
+u|13;
+u|12;
+u|11;
+u|9;
+u|7;
+u|5;
+u|4;
+u|3;
+u|2;
+u|1;
+
+
+int i,a,b ;
+u= b3 ;
+
+for (i =0 ; i<=24; ++i)
+	u<<i;
+
+u=b2 ;
+
+for (i =0 ; i<=16; ++i)
+
+	u<<i;
+
+c= b1;
+
+for (i = 0 ; i<=8; ++i)
+	c=c<<i;
+d=b0;
+
+u = a+b+c+d;
+*/
+
+
+int a,b,c,d ;
+a = b3 <<24;
+b= b2 << 16;
+c = b1 << 8;
+d = b0;
+
+u=a+b+c+d ;
+
+printf("%X\n" , u);
+
+}
